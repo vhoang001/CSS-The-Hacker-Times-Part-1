@@ -1,1 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
+
+/*body{
+    background-color: #eee;
+    font: Source Sans Pro, sans-serif;
+}
+
+main{
+    font: Roboto Slab, sans-serif;
+    color:#dd3232
+}
+
+nav{
+    color: #777;
+} */
+
+.newspaper-container{
+    width: 700px;
+    margin: 0 auto; /* Center the container */
+    background-color: white; /* White background */
+    border-radius: 100px; /* Rounded edges */
+    box-shadow: #ddd ; /* Box shadow */
+    padding: 100px; /* Padding around the content */
+}
+
+header{
+    font: Abril Fatface, sans-serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center the navigation */
+    border-top: 1px solid #777; /* Top border */
+    border-bottom: 1px solid #777; /* Bottom border */
+    margin-bottom: 20px; /* Margin below navigation */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Inline-block elements */
+    margin-right: 10px; /* Space between menu items */
+  }
+
+  nav ul li a{
+    color: #777;
+    text-decoration: none;
+  }
+
+/* Front-Page Article */
+main img {
+    width: 100%; /* Make image responsive */
+  }
+  
+  main p {
+    margin: 0; /* Align text with image edges */
+  }
+  
+  /* More Articles */
+  .more-articles {
+    text-align: center; /* Center articles */
+    border-top: 1px solid #ddd; /* Top border */
+  }
+  
+  .more-articles section {
+    display: inline-block; /* Inline-block elements */
+    width: 45%; /* Width of each article */
+    margin: 10px; /* Spacing around articles */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 720px) {
+    .newspaper-container {
+      width: 90%; /* Responsive width */
+    }
+  
+    .more-articles section {
+      width: 90%; /* Full width for smaller screens */
+    }
+  }
+  
