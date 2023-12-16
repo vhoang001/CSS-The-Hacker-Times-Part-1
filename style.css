@@ -1,81 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
 
-/*body{
-    background-color: #eee;
-    font: Source Sans Pro, sans-serif;
+body{
+  font-family: 'Source Sans Pro';
+  background-color: #eee;
+  margin-left: 30em;
 }
 
-main{
-    font: Roboto Slab, sans-serif;
-    color:#dd3232
+h5{
+  color: #dd3232;
 }
 
-nav{
-    color: #777;
-} */
-
-.newspaper-container{
-    width: 700px;
-    margin: 0 auto; /* Center the container */
-    background-color: white; /* White background */
-    border-radius: 100px; /* Rounded edges */
-    box-shadow: #ddd ; /* Box shadow */
-    padding: 100px; /* Padding around the content */
+text{
+  color: black;
 }
+
+head{
+  font-family: 'Roboto Slab';
+}
+
+.date{
+  text-align: left;
+  color: #777;
+}
+
+/*Header*/
 
 header{
-    font: Abril Fatface, sans-serif;
-    text-align: center;
+  font-family: 'Abril Fatface';
+  text-align: center;
 }
 
-nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    text-align: center; /* Center the navigation */
-    border-top: 1px solid #777; /* Top border */
-    border-bottom: 1px solid #777; /* Bottom border */
-    margin-bottom: 20px; /* Margin below navigation */
-  }
-  
-  nav ul li {
-    display: inline-block; /* Inline-block elements */
-    margin-right: 10px; /* Space between menu items */
-  }
+/*Newspaper Container*/
+.newspaper-container{
+  background-color: white;
+  box-shadow: #ddd;
+  width: 700px;
+  border-radius: 5em;
+  padding: 5em;
+}
 
-  nav ul li a{
-    color: #777;
-    text-decoration: none;
-  }
+/*Navigation*/
 
-/* Front-Page Article */
+nav ul li a{
+  color: #777;
+  text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 auto;
+  border-bottom: 0.1em solid #777;
+  border-top: 0.1em solid #777;
+}
+
+nav li{
+  display: inline-block;
+  padding: 0.3em; 
+}
+
+/*Front-Page Article*/
+
 main img {
-    width: 100%; /* Make image responsive */
-  }
-  
-  main p {
-    margin: 0; /* Align text with image edges */
-  }
-  
-  /* More Articles */
-  .more-articles {
-    text-align: center; /* Center articles */
-    border-top: 1px solid #ddd; /* Top border */
-  }
-  
-  .more-articles section {
-    display: inline-block; /* Inline-block elements */
-    width: 45%; /* Width of each article */
-    margin: 10px; /* Spacing around articles */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 720px) {
-    .newspaper-container {
-      width: 90%; /* Responsive width */
-    }
-  
-    .more-articles section {
-      width: 90%; /* Full width for smaller screens */
-    }
-  }
-  
+  width: 100%; 
+}
+
+main p {
+  margin: 0; 
+}
+
+/*More Articles*/
+
+.more-articles{
+  text-align: justify;
+  border-bottom: 0.1em solid #777;
+  border-top: 0.1em solid #777;
+  margin: 30px;
+}
+
+.more-articles section{
+  display: inline-block;
+  width: 40%;
+  margin: 30px;
+}
+
+.more-articles img {
+  width: 100%; 
+}
+
+/*bonus*/
+
+.bonus-articles{
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  text-align: justify;
+  border-bottom: 0.1em solid #777;
+  border-top: 0.1em solid #777;
+  margin: 10px;
+}
+
+.bonus-articles section{
+  gap: 50px;
+  margin: 5px;
+}
+
+.bonus-articles img {
+  width: 100%; 
+  height: 10em;
+}
+
+
+/*footer*/
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
